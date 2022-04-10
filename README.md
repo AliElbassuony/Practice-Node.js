@@ -25,7 +25,7 @@
 
 > List of courses and Topics I learnt
 
-- the-complete-nodejs-developer-course
+- [x] the-complete-nodejs-developer-course
 
 ## Projects
 
