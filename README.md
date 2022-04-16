@@ -35,4 +35,4 @@
 
 ## License
 
-> This software is licensed under MIT License, See [License](https://github.com/AliElbassuony/Practice-Node.js/blob/master/LICENSE) for more information ©AliElbassuony.
+> This software is licensed under MIT License, See [License](https://github.com/AliElbassuony/Practice-Node.js/blob/main/LICENSE) for more information ©AliElbassuony.
