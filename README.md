@@ -38,9 +38,25 @@
 
 ## What is Node.js?
 
-- Open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+- Open-source, cross-platform, back-end JavaScript runtime environment that runs on Chrome's V8 JavaScript engine and executes JavaScript code outside a web browser.
 - A way to run JavaScript code on the server as opposed to being forced to run it on the client in the browser.
 - Provide custom functionality, so various tools and libraries specific.
+
+## Why Should I Use Node.js?
+
+- Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+
+### event-driven
+
+> The process of registering those callbacks and having then called when I/O operation is done.
+
+### non-blocking I/O
+
+> Node.js standard library provide asynchronous versions, which are non-blocking, and accept callback functions [Additional Resources](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/)
+
+### npm
+
+> Node.js package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 
 ----
 
