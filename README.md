@@ -31,6 +31,10 @@
 
 > List of Projects
 
+## Installation
+
+- [Install Node from official website](https://nodejs.org/en/)
+
 ----
 
 ## License
