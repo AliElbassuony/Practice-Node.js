@@ -36,6 +36,12 @@
 - [Install Node from official website](https://nodejs.org/en/)
 - Check version by `node -v`
 
+## What is Node.js?
+
+- Open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+- A way to run JavaScript code on the server as opposed to being forced to run it on the client in the browser.
+- Provide custom functionality, so various tools and libraries specific.
+
 ----
 
 ## License
