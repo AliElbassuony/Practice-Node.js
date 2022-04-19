@@ -1,0 +1,3 @@
+This file was created by Node.js
+This is new line by append method
+This is new line by append method
