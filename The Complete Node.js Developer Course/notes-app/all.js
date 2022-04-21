@@ -21,3 +21,7 @@
 // console.log(notes)
 
 // console.log(validator.isURL('https:/mead.io'));
+
+// console.log(chalk.red.bold.inverse('Error!'))
+
+//console.log(process.argv)
