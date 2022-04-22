@@ -8,8 +8,15 @@ yargs.version('1.1.0')
 yargs.command({
     command: 'add',
     describe: 'add note',
-    hadler: function(){
-        console.log('Adding note!')
+    builder: {
+        title: {
+            describe: 'Note title',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: function(argv){
+        console.log("Title: ",argv.title)
     }
 })
 
@@ -37,4 +44,6 @@ yargs.command({
     }
 })
 
-console.log(yargs.argv)
+// we can use
+yargs.parse()
+//console.log(yargs.argv)
