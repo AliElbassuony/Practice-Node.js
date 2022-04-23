@@ -1,3 +1,7 @@
 in broswer => window
 
 in node cmd => global - process
+
+process.argv
+
+argv => argument vector
