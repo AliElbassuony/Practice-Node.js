@@ -14,7 +14,7 @@ const fs = require('fs')
 
 // console.log(data.author)
 
-
+// read data from json file by system modules
 const dataBuffer = fs.readFileSync('1-json.json')
 const dataJSON = dataBuffer.toString()
 const data = JSON.parse(dataJSON)
