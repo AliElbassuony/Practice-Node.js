@@ -7,7 +7,7 @@
 // append data to file.txt
 //fs.appendFileSync('file.txt','\nThis is new line by append method')
 
-
+//========================================================================
 // Module system 2
 // const add = require('./utils');
 // const sum = add(1,2);
@@ -25,3 +25,5 @@
 // console.log(chalk.red.bold.inverse('Error!'))
 
 //console.log(process.argv)
+
+//==================================================================
