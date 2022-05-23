@@ -1,11 +1,15 @@
 # The Complete Node.js Developer Course
 
 ## Section 1: Welcome
-<html>
-  <a href="[http://example.com/](https://drive.google.com/file/d/1NNPIaoSLWxlNhIVdrkXwtqZnASra7hBd/view?usp=sharing)" target="_blank"> The PDF Guide</a>
-</html>
+
 - [The PDF Guide](https://drive.google.com/file/d/1NNPIaoSLWxlNhIVdrkXwtqZnASra7hBd/view?usp=sharing)
+
 ## Section 2: Installing and Exploring Node.js
+
+> Installing and Exploring Node.js
+-
+-
+-
 
 ## Section 3: Node.js Module System (Notes App)
 
