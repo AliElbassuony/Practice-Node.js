@@ -15,7 +15,7 @@
 
 - Importing Node.js Core Modules
 - Importing Your Own Files
-- Importing nmp Modules
+- Importing npm Modules
 - Printing in Color
 - Global npm Modules and nodemon
 
