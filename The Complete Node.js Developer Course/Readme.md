@@ -6,11 +6,23 @@
 
 ## Section 2: Installing and Exploring Node.js
 
-> Installing and Exploring Node.js
--
--
--
+- Installing Node.js and Visual Studio Code
+- What is Node.js?
+- Why Should I Use Node.js?
+- Your First Node.js Script
 
 ## Section 3: Node.js Module System (Notes App)
 
+- Importing Node.js Core Modules
+- Importing Your Own Files
+- Importing nmp Modules
+- Printing in Color
+- Global npm Modules and nodemon
+
 ## Section 4: File System and Command Line Args (Notes App)
+
+- Getting Input from Users
+- Argument Parsing with Yargs
+- Storing Data with JSON
+- Adding a Note
+- Removing a Note
