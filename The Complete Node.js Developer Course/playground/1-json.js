@@ -21,7 +21,7 @@ const data = JSON.parse(dataJSON)
 
 data.name = "Ali"
 data.planet = "Earth"
-data.age = 23
+data.age = 24
 
 
 const newData = JSON.stringify(data)
