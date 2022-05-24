@@ -30,3 +30,8 @@
 - Refactoring to Use Arrow Functions
 - Listing Notes
 - Reading a Note
+
+## Section 5: Debugging Node.js (Notes App)
+
+- Debugging Node.js
+- Error Messages
