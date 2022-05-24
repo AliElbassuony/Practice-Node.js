@@ -35,3 +35,8 @@
 
 - Debugging Node.js
 - Error Messages
+
+## Section 6: Asynchronous Node.js (Weather App)
+
+- Asynchronous Basics
+- 
