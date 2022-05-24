@@ -7,7 +7,11 @@ const addNote = (title, body) => {
     const notes = loadNotes()
     //const duplicateNotes = notes.filter( note => title === note.title )
     const duplicateNote = notes.find( note => title === note.title )
-
+    //debugger
+    // node inspect app.js
+    // chrome://inspect
+    // 127.0.0.1:9229
+    // debug> restart
     if(!duplicateNote) {
         notes.push({
             title: title,
