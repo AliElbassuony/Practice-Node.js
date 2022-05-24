@@ -29,4 +29,4 @@
 - ES6 Aside: Arrow Functions
 - Refactoring to Use Arrow Functions
 - Listing Notes
-- Readong a Note
+- Reading a Note
