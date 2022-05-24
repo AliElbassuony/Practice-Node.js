@@ -26,3 +26,7 @@
 - Storing Data with JSON
 - Adding a Note
 - Removing a Note
+- ES6 Aside: Arrow Functions
+- Refactoring to Use Arrow Functions
+- Listing Notes
+- Readong a Note
