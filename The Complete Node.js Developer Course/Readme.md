@@ -39,4 +39,6 @@
 ## Section 6: Asynchronous Node.js (Weather App)
 
 - Asynchronous Basics
-- 
+- Call Stack, Callback Queue, and Event Loop
+- Making HTTP Requests
+- Customizing HTTP Requests
