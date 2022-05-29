@@ -9,3 +9,13 @@ requet({url: url, json: true}, (error, response) => {
     const weatherdesc = response.body.current.weather_descriptions[0];
     console.log(`${weatherdesc}. It is currently ${temperature} degrees out. It's feels like ${feelsLike} degrees.`)
 })
+
+
+const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoiYWxpZWxiYXNzdW9ueSIsImEiOiJjbDNydjhnMGIwcTZmM2JwZm84dWxwZXh0In0.xEYGJ6VsVOFSnU2v9urrkg&limit=1'
+
+requet({url: geocodeURL, json: true},(error, response) => {
+    const arr = response.body.features[0].center
+    const latitude = arr[1] 
+    const longitude = arr[0]
+    console.log(latitude, longitude)
+})
