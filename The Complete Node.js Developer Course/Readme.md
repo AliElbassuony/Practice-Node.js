@@ -43,3 +43,5 @@
 - Making HTTP Requests
 - Customizing HTTP Requests
 - An HTTP Request Challenge
+- Handling Errors
+- The Callback Function
