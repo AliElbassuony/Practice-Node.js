@@ -42,3 +42,4 @@
 - Call Stack, Callback Queue, and Event Loop
 - Making HTTP Requests
 - Customizing HTTP Requests
+- An HTTP Request Challenge
