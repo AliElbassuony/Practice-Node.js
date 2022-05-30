@@ -45,3 +45,14 @@
 - An HTTP Request Challenge
 - Handling Errors
 - The Callback Function
+- Callback Abstraction
+- Callback Abstraction Challenge
+- Callback Chaining
+- ES6 Aside: Object Property Shorthand and Destructuring
+- Destructuring and Property Shorthand Challenge
+- HTTP Requests Without a Library
+
+## Section 7: Web Servers (Weather App)
+
+- Hello Express!
+- Serving up HTML and JSON
