@@ -41,9 +41,18 @@ app.get('/about',(req, res) => {
 })
 
 app.get('/weather', (req, res) => {
+
+    if(!req.query.address){
+        return res.send({
+            error: 'No Provided Address'
+        })
+    }
+
+    console.log(req.query.address)
     res.send({
+        forecast: 'Sunny',
         location: 'Damanhour',
-        forecast: 30
+        address: req.query.address
     })
 })
 
