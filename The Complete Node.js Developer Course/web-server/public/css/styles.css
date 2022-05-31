@@ -1,13 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital@1&display=swap');
 
 body {
-    background-color:rgb(0,32,97);
+    background-color:#fff;
     font-family: lato;
     font-weight: 400;
-    color: #fff;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    color: #00287A;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-a {
+.main-content {
+    flex-grow: 1;
+
+}
+
+footer {
+    color: #007aff;
+    border-top: 1px solid;
+    margin-top: 16px;
+    padding: 16px 0;
+    font-size: 20px;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 46px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
     text-decoration: none;
-    color: chartreuse;
+    color: #7fff00;
+    margin-right: 10px;
+    font-size: 20px
 }

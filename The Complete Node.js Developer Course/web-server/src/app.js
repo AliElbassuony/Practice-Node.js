@@ -21,7 +21,7 @@ app.use(express.static(publucDirPath))
 
 app.get('',(req, res) => {
     res.render('index',{
-        title: 'Welcome To My Youtube Channel',
+        title: 'Weather',
         name: 'Ali'
     })
 })
@@ -44,6 +44,21 @@ app.get('/weather', (req, res) => {
     res.send({
         location: 'Damanhour',
         forecast: 30
+    })
+})
+
+app.get('/help/*',(req, res) => {
+    res.render('404page',{
+        title: 'Help article not found.',
+        name: 'Ali'
+    })
+})
+
+
+app.get('*', (req, res) => {
+    res.render('404page',{
+        title: 'Page not found.',
+        name: 'Ali'
     })
 })
 
