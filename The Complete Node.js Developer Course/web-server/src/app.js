@@ -1,11 +1,22 @@
+const hbs = require('hbs')
 const path = require('path')
 const express = require('express')
 
+// Create instance from Express
 const app = express()
-const publucDirPath = path.join(__dirname,'../public')
 
-app.use(express.static(publucDirPath))
+// Define paths for Express config
+const publucDirPath = path.join(__dirname,'../public')
+const viewsPath = path.join(__dirname,'../templates/views')
+const partialsPath = path.join(__dirname,'../templates/partials')
+
+// Setup handlebars engine and views location
 app.set('view engine','hbs')
+app.set('views',viewsPath)
+hbs.registerPartials(partialsPath)
+
+// Using Static directory to serve
+app.use(express.static(publucDirPath))
 
 
 app.get('',(req, res) => {
