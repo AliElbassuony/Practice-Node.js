@@ -56,3 +56,11 @@
 
 - Hello Express!
 - Serving up HTML and JSON
+- Serving up Static Assets
+- Serving up CSS, JS, Images, and More
+- Dynamic Pages with Templating
+- Customizing the Views Directory
+- Advanced Templating
+- 404 Pages
+- Styling the Application
+
