@@ -64,3 +64,11 @@
 - 404 Pages
 - Styling the Application
 
+## Section 8: Accessing API from Browser (Weather App)
+
+- The Query String
+- Building a JSON HTTP Endpoint
+- ES6 Aside: Default Function Parameters
+- Browser HTTP Requests with Fetch
+- Creating a Search Form
+- Wiring up the User Interface
