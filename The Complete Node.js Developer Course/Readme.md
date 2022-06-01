@@ -72,3 +72,15 @@
 - Browser HTTP Requests with Fetch
 - Creating a Search Form
 - Wiring up the User Interface
+
+## Section 9: Application Deployment (Weather App)
+
+- Joining Heroku and GitHub
+- Version Control with Git
+- Exploring Git
+- Integrating Git
+- Setting up SSH keys
+- Pushing Code to GitHub
+- Deploying Node.js to Heroku
+- New Feature Deployment Workflow
+- Avoiding Global Modules
