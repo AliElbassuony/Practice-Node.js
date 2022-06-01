@@ -1,6 +1,8 @@
 const hbs = require('hbs')
 const path = require('path')
 const express = require('express')
+const geocode = require('./utils/geocode')
+const forecast = require('./utils/forecast')
 
 // Create instance from Express
 const app = express()
@@ -48,13 +50,32 @@ app.get('/weather', (req, res) => {
         })
     }
 
-    console.log(req.query.address)
-    res.send({
-        forecast: 'Sunny',
-        location: 'Damanhour',
-        address: req.query.address
+    geocode(req.query.address, (err, {latitude, longitude, location} = {}) => {
+        if(err){
+            return res.send({
+                error: 'Not Valid Address'
+            })
+        }
+        
+        forecast(latitude, longitude, (err, forecastData) => {
+            if(err){
+                return res.send({
+                    error: 'Not Valid coordinates!'
+                })
+            }
+
+            res.send({
+                forecast: forecastData,
+                location: location,
+                address: req.query.address
+            })
+        })
     })
+
+    
 })
+
+
 
 app.get('/help/*',(req, res) => {
     res.render('404page',{
