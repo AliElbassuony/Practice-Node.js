@@ -1,12 +1,10 @@
-console.log('from js')
-
 const weatherLocation = document.querySelector('form')
 const search = document.querySelector('input')
 const msg1 =  document.querySelector('#msg1')
 const msg2 =  document.querySelector('#msg2')
 
 const getLocation = location => {
-    fetch('http://localhost:3000/weather?address=' + encodeURIComponent(location)).then((res) => {
+    fetch('/weather?address=' + encodeURIComponent(location)).then((res) => {
         res.json().then((data) => {
 
             if(data.error){
