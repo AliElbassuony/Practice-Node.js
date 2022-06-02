@@ -88,3 +88,4 @@
 ## Section 10: MongoDB and Promises (Task App)
 
 - MongoDB and NoSQL Databases
+- Installing MongoDB
