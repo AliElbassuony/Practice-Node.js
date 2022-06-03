@@ -9,9 +9,16 @@ const forecast = (latitude, longitude, callback) => {
             callback('Not Existing Params!', undefined)
         } else{
             data = {
-                temperature: body.current.temperature,
-                feelsLike: body.current.feelslike,
-                weatherdesc: body.current.weather_descriptions[0]
+                text: `It's currently ${body.current.temperature} degree,
+            it's feelsLike ${body.current.feelslike} degree, 
+            sky is ${body.current.weather_descriptions[0]} now,
+            wind speed ${body.current.wind_speed}km/h and 
+            wind direction ${body.current.wind_dir},
+            and humidity is ${body.current.humidity}
+            `,
+            location: body.location,
+                icon: `${body.current.weather_icons[0]}`,
+                time: `${body.current.observation_time}`
             }
             callback(undefined, data)
         }

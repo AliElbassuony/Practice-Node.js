@@ -56,3 +56,7 @@ button {
     background-color: #007aff;
     color: #fff;
 }
+
+#icon {
+    border-radius: 30px;   
+}
