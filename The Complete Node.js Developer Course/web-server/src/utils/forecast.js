@@ -16,9 +16,7 @@ const forecast = (latitude, longitude, callback) => {
             wind direction ${body.current.wind_dir},
             and humidity is ${body.current.humidity}
             `,
-            location: body.location,
                 icon: `${body.current.weather_icons[0]}`,
-                time: `${body.current.observation_time}`
             }
             callback(undefined, data)
         }
