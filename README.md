@@ -19,13 +19,14 @@
 
 ## About
 
-> All codes I write while learning Node.js, new commit = new lesson.
+> All codes I write while learning Node.js and MongoDB.
 
 ## Courses
 
 > List of courses and Topics I learnt
 
 - [x] the-complete-nodejs-developer-course
+- [X] Complete MongoDB Tutorial (The Net Ninja)
 
 ## Projects
 
