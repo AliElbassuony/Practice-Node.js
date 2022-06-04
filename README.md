@@ -13,7 +13,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/AliElbassuony/Practice-Node.js)](https://github.com/AliElbassuony/Practice-Node.js/network)
 [![GitHub stars](https://img.shields.io/github/stars/AliElbassuony/Practice-Node.js)](https://github.com/AliElbassuony/Practice-Node.js/stargazers)
 [![GitHub license](https://img.shields.io/github/license/AliElbassuony/Practice-Node.js)](https://github.com/AliElbassuony/Practice-Node.js/blob/master/LICENSE)
-![2%](https://progress-bar.dev/2/?title=Progress)
+![40%](https://progress-bar.dev/40/?title=Progress)
 
 </div>
 
