@@ -90,3 +90,6 @@
 - MongoDB and NoSQL Databases
 - Installing MongoDB
 - Installing Database GUI Viewer
+- Connecting and Inserting Documents
+- Inserting Documents
+- The ObjectID
