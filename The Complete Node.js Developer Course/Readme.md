@@ -89,3 +89,4 @@
 
 - MongoDB and NoSQL Databases
 - Installing MongoDB
+- Installing Database GUI Viewer
