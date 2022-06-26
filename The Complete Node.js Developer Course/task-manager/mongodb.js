@@ -2,15 +2,24 @@
 const mongodb = require('mongodb')
 const MongoClient = mongodb.MongoClient
 
-// establish connection varialbes
+// establish connection variables
 const connectionURL = `mongodb://127.0.0.1:27017`
 const databaseName = `task-manager`
 
-// establich connection
+// establish connection
 MongoClient.connect(connectionURL, {useNewUrlParser: true},(error, client) => {
     if(error){
         return console.log(`Unable to connect to database!!`)
     }
 
-    console.log('Connected!')
+    // Set Database Name
+    const db = client.db(databaseName)
+
+    // Insert
+    db.collection('users').insertOne({
+        name: `Ali`,
+        age: '23'
+    })
+
+
 })
