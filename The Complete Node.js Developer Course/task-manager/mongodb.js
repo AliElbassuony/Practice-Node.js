@@ -10,10 +10,10 @@ const databaseName = `task-manager`
 
 
 //id
-const id = new ObjectID()
-console.log(id)
-console.log(id.id.length)
-console.log(id.toHexString().length)
+// const id = new ObjectID()
+// console.log(id)
+// console.log(id.id.length)
+// console.log(id.toHexString().length)
 
 // establish connection
 MongoClient.connect(connectionURL, {useNewUrlParser: true},(error, client) => {
@@ -24,18 +24,39 @@ MongoClient.connect(connectionURL, {useNewUrlParser: true},(error, client) => {
     // Set Database Name
     const db = client.db(databaseName)
 
-    //Insert One in Users Collection
-    db.collection('users').insertOne({
-        _id: id,
-        name: `Alaa`,
-        age: '24'
-    },(err, res) => {
+
+    //findOne
+    db.collection('tasks').findOne({_id: new ObjectID("62c66eacf9d82825f5d467cd") },(err, res) => {
+            if(err){
+                return console.log('Error')
+            }
+
+            console.log(res)
+    })
+
+    //find
+    // toArray() => to fetch data in array
+    // count() => count matched items
+    db.collection('tasks').find({completed: false}).toArray((err, tasks) => {
         if(err){
-            return console.log(Error)
+            return console.log('Error!')
         }
 
-        console.log(res)
+        console.log(tasks)
     })
+
+    //Insert One in Users Collection
+    // db.collection('users').insertOne({
+    //     _id: id,
+    //     name: `Alaa`,
+    //     age: '24'
+    // },(err, res) => {
+    //     if(err){
+    //         return console.log(Error)
+    //     }
+
+    //     console.log(res)
+    // })
 
     // Insert Many in Tasks Collections
     // db.collection('tasks').insertMany([
