@@ -15,11 +15,35 @@ MongoClient.connect(connectionURL, {useNewUrlParser: true},(error, client) => {
     // Set Database Name
     const db = client.db(databaseName)
 
-    // Insert
-    db.collection('users').insertOne({
-        name: `Ali`,
-        age: '23'
+    // Insert One in Users Collection
+    // db.collection('users').insertOne({
+    //     name: `Mohamed`,
+    //     age: '22'
+    // },(err, res) => {
+    //     if(err){
+    //         return console.log(Error)
+    //     }
+
+    //     console.log(res)
+    // })
+
+    // Insert Many in Tasks Collections
+    db.collection('tasks').insertMany([
+        {
+            description: 'Study Nodejs',
+            completed: true
+        },{
+            description: 'Practice Tools',
+            completed: false
+        },{
+            description: "Don't Waste Time",
+            completed: false
+        }
+    ],(err, res) => {
+        if(err){
+            return console.log('Unable insert Documnets!')
+        }
+
+        console.log(res)
     })
-
-
 })
