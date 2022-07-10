@@ -1,9 +1,14 @@
-const add = (num1, num2, callback) => {
+const doWorkCallback = (callback) => {
     setTimeout(() => {
-        callback(num1 + num2)
-    },2000)
-} 
+        // callback(`This For Error!`,undefined);
+        callback(undefined,['ALi','Mohamed']);
+    },1000);
+}
 
-add(1, 4, sum => {
-    console.log(sum)
+doWorkCallback((error ,result) => {
+    if(error){
+        return console.log(error)
+    }
+
+    console.log(result)
 })
