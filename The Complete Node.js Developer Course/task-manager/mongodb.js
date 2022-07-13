@@ -24,26 +24,53 @@ MongoClient.connect(connectionURL, {useNewUrlParser: true},(error, client) => {
     // Set Database Name
     const db = client.db(databaseName)
 
+    // Update One
+    // const updatePromise = db.collection("tasks").updateOne({
+    //     _id: new ObjectID("62c66eacf9d82825f5d467cd")
+    // },{
+    //     $set: {
+    //         completed: true
+    //     }
+    // })
+
+    // updatePromise.then((result) => {
+    //     console.log(result)
+    // }).catch((error) => {
+    //     console.log(error)
+    // })
+
+    //Update Many
+    db.collection("tasks").updateMany({
+        completed: false
+    },{
+        $set: {
+            completed: true
+        }
+    }).then((result) => {
+        console.log(result)
+    }).catch((error) => {
+        console.log(error)
+    })
 
     //findOne
-    db.collection('tasks').findOne({_id: new ObjectID("62c66eacf9d82825f5d467cd") },(err, res) => {
-            if(err){
-                return console.log('Error')
-            }
+    // db.collection('tasks').findOne({_id: new ObjectID("62c66eacf9d82825f5d467cd") },(err, res) => {
+    //         if(err){
+    //             return console.log('Error')
+    //         }
 
-            console.log(res)
-    })
+    //         console.log(res)
+    // })
 
-    //find
-    // toArray() => to fetch data in array
-    // count() => count matched items
-    db.collection('tasks').find({completed: false}).toArray((err, tasks) => {
-        if(err){
-            return console.log('Error!')
-        }
+    // //find
+    // // toArray() => to fetch data in array
+    // // count() => count matched items
+    // db.collection('tasks').find({completed: false}).toArray((err, tasks) => {
+    //     if(err){
+    //         return console.log('Error!')
+    //     }
 
-        console.log(tasks)
-    })
+    //     console.log(tasks)
+    // })
 
     //Insert One in Users Collection
     // db.collection('users').insertOne({

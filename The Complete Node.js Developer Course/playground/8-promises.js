@@ -1,8 +1,12 @@
 const promise = new Promise((resolve, reject) => {
-    // resolve(`Done!`)
-    reject('Fail')
+    setTimeout(() => {
+        resolve([7, 5, 1])
+        // reject(`Things Went Wrong!`)
+    })
 })
-    console.log(promise)
+
+console.log(promise)
+
 promise.then((e) => {
     console.log('Sucssed!',e)
 }).catch(e => {
