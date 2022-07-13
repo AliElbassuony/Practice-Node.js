@@ -27,13 +27,13 @@ MongoClient.connect(connectionURL, {useNewUrlParser: true},(error, client) => {
 
     // Deleting One
 
-    db.collection("users").deleteOne({
-        name: "Alaa"
-    }).then((result) => {
-        console.log(result)
-    }).catch((error) => {
-        console.log(error)
-    })
+    // db.collection("users").deleteOne({
+    //     name: "Alaa"
+    // }).then((result) => {
+    //     console.log(result)
+    // }).catch((error) => {
+    //     console.log(error)
+    // })
 
     // Deleting Many
     // db.collection("users").deleteMany({
