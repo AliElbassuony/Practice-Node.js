@@ -94,8 +94,15 @@
 - Inserting Documents
 - The ObjectID
 
-## Section 11: 
+## Section 11: REST APIs and Mongoose (Task App)
 
--
--
--
+- Setting up Mongoose
+- Creating a Mongoose Model
+- Data Validation and Sanitization
+- Structuring a REST API
+- Installing Postman
+- Resource Creation Endpoints
+- Resource Reading Endpoints
+- Promise Chaining
+- Async/Await
+- 
