@@ -93,6 +93,10 @@
 - Connecting and Inserting Documents
 - Inserting Documents
 - The ObjectID
+- Querying Documents
+- Promises
+- Updating Documents
+- Deleting Documents
 
 ## Section 11: REST APIs and Mongoose (Task App)
 
