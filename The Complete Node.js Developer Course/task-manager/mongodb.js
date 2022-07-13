@@ -24,6 +24,26 @@ MongoClient.connect(connectionURL, {useNewUrlParser: true},(error, client) => {
     // Set Database Name
     const db = client.db(databaseName)
 
+
+    // Deleting One
+
+    db.collection("users").deleteOne({
+        name: "Alaa"
+    }).then((result) => {
+        console.log(result)
+    }).catch((error) => {
+        console.log(error)
+    })
+
+    // Deleting Many
+    // db.collection("users").deleteMany({
+    //     name: 'Mohamed'
+    // }).then((result) => {
+    //     console.log(result)
+    // }).catch((error) => {
+    //     console.log(error)
+    // })
+
     // Update One
     // const updatePromise = db.collection("tasks").updateOne({
     //     _id: new ObjectID("62c66eacf9d82825f5d467cd")
@@ -40,17 +60,17 @@ MongoClient.connect(connectionURL, {useNewUrlParser: true},(error, client) => {
     // })
 
     //Update Many
-    db.collection("tasks").updateMany({
-        completed: false
-    },{
-        $set: {
-            completed: true
-        }
-    }).then((result) => {
-        console.log(result)
-    }).catch((error) => {
-        console.log(error)
-    })
+    // db.collection("tasks").updateMany({
+    //     completed: false
+    // },{
+    //     $set: {
+    //         completed: true
+    //     }
+    // }).then((result) => {
+    //     console.log(result)
+    // }).catch((error) => {
+    //     console.log(error)
+    // })
 
     //findOne
     // db.collection('tasks').findOne({_id: new ObjectID("62c66eacf9d82825f5d467cd") },(err, res) => {
