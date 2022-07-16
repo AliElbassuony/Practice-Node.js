@@ -109,4 +109,7 @@
 - Resource Reading Endpoints
 - Promise Chaining
 - Async/Await
-- 
+- Integrating Async/Await
+- Resource Updating Endpoints
+- Resource Deleting Endpoints
+- Separate Route Files
