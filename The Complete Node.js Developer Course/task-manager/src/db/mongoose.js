@@ -65,7 +65,7 @@ const Task = mongoose.model('Task',{
 })
 
 const task1 = new Task({
-    description: 'Never Give UP',
+    description : 'Never Give UP',
     // completed: false
 })
 
