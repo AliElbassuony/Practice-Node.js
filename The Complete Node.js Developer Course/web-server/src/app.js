@@ -72,11 +72,7 @@ app.get('/weather', (req, res) => {
             })
         })
     })
-
-    
 })
-
-
 
 app.get('/help/*',(req, res) => {
     res.render('404page',{
@@ -85,14 +81,12 @@ app.get('/help/*',(req, res) => {
     })
 })
 
-
 app.get('*', (req, res) => {
     res.render('404page',{
         title: 'Page not found.',
         name: 'Ali'
     })
 })
-
 
 app.listen(port,() => {
     console.log('Server is up on port ' + port)
