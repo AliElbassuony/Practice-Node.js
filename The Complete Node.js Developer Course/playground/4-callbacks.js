@@ -12,3 +12,5 @@ doWorkCallback((error ,result) => {
 
     console.log(result)
 })
+
+console.log('Hello')
